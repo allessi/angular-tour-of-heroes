@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeroesComponent } from './components/heroes/heroes.component';
 import { MessagesComponent } from './components/messages/messages.component';
 
@@ -8,7 +8,7 @@ import { MessagesComponent } from './components/messages/messages.component';
   standalone: true,
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
-  imports: [RouterOutlet, HeroesComponent, MessagesComponent],
+  imports: [RouterOutlet, HeroesComponent, MessagesComponent, RouterModule],
 })
 export class AppComponent {
   title: string = 'Tour of Heroes';
